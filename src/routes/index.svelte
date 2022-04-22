@@ -11,6 +11,7 @@
 </svelte:head>
 
 <section>
+
 	<h1>
 		<div class="welcome">
 			<picture>
@@ -25,6 +26,9 @@
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
+
+	<h1>Not using Tailwind :(</h1>
+	<h1 class="text-3xl font-bold underline">Using Tailwind!</h1>
 
 	<Counter />
 </section>
