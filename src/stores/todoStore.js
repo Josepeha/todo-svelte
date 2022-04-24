@@ -21,9 +21,9 @@ export const deleteTodo = (todoToDelete) => {
     })
 };
 
-export const toggleTodoCompleted = (id) => {
+export const toggleTodoCompleted = (completedId) => {
     todos.update(currentTodos => {
-        const index = currentTodos.findIndex(todo => todo.id === todo.id);
+        const index = currentTodos.findIndex(todo => todo.id === completedId);
         if (index === -1) throw {message: 'element not found in array... it cant be...'};
         currentTodos[index].completed = !currentTodos[index].completed;
         return currentTodos;
