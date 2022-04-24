@@ -7,7 +7,7 @@ export const addTodo = (newTodo) => {
         return [
             ...currentTodos,
             {
-                newTodo,
+                text: newTodo,
                 completed: false,
                 id: Date.now(),
             }
