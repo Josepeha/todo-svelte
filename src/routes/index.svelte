@@ -1,5 +1,7 @@
 <script>
     import TodoForm from '../components/TodoForm.svelte';
+    import {todos} from "../stores/todoStore.js";
+    import Todo from "../components/Todo.svelte";
 </script>
 
 <main>
@@ -7,5 +9,7 @@
         My Todos
     </h1>
     <TodoForm />
-
+    {#each $todos as todo}
+        <Todo todo={todo} index={todo.id} />
+    {/each}
 </main>
